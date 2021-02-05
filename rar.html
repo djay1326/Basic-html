@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<title>			Registration form</title>
+<style>
+body{background-image:url('ghj.jpg');
+		background-repeat:no-repeat;
+		background-size:100%;
+		background-size: cover;}
+</style>
+</head>
+<body text-align="right">
+<h2 style= "color:red"align="center">Registration Form</h2>
+<form action="/abc.php" method="get" autocomplete="on" align="center">
+	First Name:      <input type = "text" size= 20 placeholder="Enter first name:" required>
+	<br>
+	Enter Password:   <input type = "password" name="password" placeholder="Enter the password" required>
+	<br>
+	Enter age:<input type= "number" max=5 min=2 size=20 name="age" placeholder="Enter age" required>
+	<br>
+	Enter gender: <input type = "radio" name = "Enter gender" checked placeholder='enter your gender'>Male
+					<input type = "radio" name = "Enter gender">Female
+	<br>
+	Hobbies: <input type ="checkbox" name= "hobbies">Singing
+	<input type ="checkbox" name= "hobbies">Dancing
+				<input type ="checkbox" name= "hobbies" checked>Acting
+	<br>
+	Upload pic: <input type = "file" name="pic">
+	<br>
+	<textarea  name= "message" rows=7 cols=20 placeholder="Enter your message" ></textarea>
+	<br>
+	City: <select size=2 multiple>		(Use Ctrl key to select multiple options)
+	<option>Delhi</option>
+	<option>Goa</option>
+	<option selected>Ahmedabad</option>
+	<option>Mumbai</option>
+	<option>Mahabaleshwar</option>
+	<option>Jaipur</option>
+	<option>Ranthambore</option>
+	</select>
+	<br>
+	<input type= "submit" name ="submit" value= "mit it" onclick= submit()>
+	<input type= "button" name = "buon" value= "printing work " onclick= "show()" size = 20>
+	<script>fuction show()
+	{alert("My name is Jay.")}</script>
+	<br>
+	<input type ="reset" name = "Reset" value = "res" >
+	<br>
+	Choose fav. color:<input type ="color" name = "my color" value="#00ff00">
+	<br>
+	Current date is= <input type ="date" name ="Date">
+	<br>
+	Current time is= <input type ="time" name ="Time"><br>
+	email:<input type ="email" name= "Email" maxlength=10 autofocus><br>
+	Hidden: <input type="hidden" name="value is hidden"><br>
+	DatetiemeLocal: <input type="datetime-local" name = "all">
+	<br>
+	month=<input type="month" name="Month and year">
+	<br>
+	Quantity: <input type="number" name="quantity" step=10 max=100 min=0 value=10>
+	<br>
+	Range:<input type="range" name="range" value="40" min=0 max=100 step=10><br>
+	Search:<input type="search" name="gsearch" placeholder="google search">
+	<input type="submit" name= "submit" value ="SUBMIT">
+	<br>
+	Mobile:<input type="tel" name="phone" placeholder="123-456-7890"><br>
+	Week:<input type="week" name="week and year" placeholder="week and year">
+	<br>
+	First Name:<input type="text" name="fname" value="Jay" placeholder="First name" readonly>
+	Last Name:<input type="text" name="lname" placeholder="Last name " value="Dalbanjan" disabled>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
